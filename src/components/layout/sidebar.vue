@@ -1,5 +1,5 @@
 <script setup>
-  import { RouterLink, createWebHistory } from 'vue-router';
+  import { RouterLink, createWebHistory, useRoute } from 'vue-router';
   import { RouterView } from 'vue-router';
   import { Icon } from "@iconify/vue";
   import { ref } from 'vue';
@@ -41,10 +41,11 @@
       icon:"fa6-brands:wpforms",
     },
   ])
+  const route = useRoute()
 </script>
 
 <template>
-  <div class="body w-screen h-screen">
+  <div class="body ">
     <div class="flex ">
       <!-- col navbar-->
       <div class="flex flex-col w-56 h-screen bg-white items-center gap-3">
@@ -64,7 +65,10 @@
         <div class="flex flex-col  mt-1 ml-0.5">
           <div v-for="item in sidebar" :key="item.title " >
             <div class="flex flex-col w-full ">
-             <RouterLink to="item.path" class="flex m-1 pl-1 mr-8 text-[14px] p-1.5 active:bg-blue-600 hover:bg-slate-300 rounded-lg "> <Icon class="mt-0.5 mr-3" :icon="item.icon" /> {{ item.title}}   </RouterLink>
+             <RouterLink
+             
+             :class="route.fullPath == item.path ? 'bg-blue-500 text-white' : ''"
+             :to="item.path" class="flex m-1 pl-5 mr-8 text-[14px] p-1.5 active:bg-blue-600  rounded-lg "> <Icon class="mt-0.5 mr-3" size="50" :icon="item.icon" />  {{ item.title}}   </RouterLink>
              
              
             </div>
@@ -78,8 +82,3 @@
     </div>
   </div>
 </template>
-<style scoped>
-  .body{
-     background-color: #EBF2FBF2 ;
-  }
-</style>

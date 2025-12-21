@@ -1,15 +1,22 @@
 <script setup>
-  
+  const props = defineProps(["type", "placeholder", "width", "height", "borderRadius", "label"]);
    
 </script>
 <template>
   
-  <button class="w-[90%] h-8 bg-[#325CA8] content-fit  mt-3 text-white text-[12px]" >
-    Login
+  <button 
+    :type="type"
+    class="bg-[#325CA8] mt-3 text-white  text-[12px] flex items-center justify-center"
+    :style="{ 
+      width: width || '90%', 
+      height: height || '2rem', 
+      borderRadius: borderRadius || '10px' 
+     
+    }"
+  >
+    {{ label || 'Login' }}
   </button>
-</template>
+  </template>
 <style scoped>
-    button{
-      border-radius: 10px;
-    }
+   
 </style>

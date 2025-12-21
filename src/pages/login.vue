@@ -3,7 +3,6 @@
   import Button from '../components/common/button.vue';
   import { RouterLink, createWebHistory } from 'vue-router';
   import { RouterView } from 'vue-router';
-
 </script>
 
 <template>
