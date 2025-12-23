@@ -12,6 +12,10 @@ import userRoles from "@/pages/userRoles.vue";
 import newuserrole from "@/pages/newuserrole.vue";
 import pages from "@/pages/pages/pages.vue";
 import newpage from "@/pages/pages/newpage.vue";
+import addpage from "@/pages/pages/addpage.vue";
+import addpage2 from "@/pages/pages/addpage2.vue";
+import pagecomponent from "@/pages/pages/pagecomponent.vue";
+import addnewpage from "@/pages/pages/addnewpage.vue";
 const router = createRouter ({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes:[
@@ -88,6 +92,26 @@ const router = createRouter ({
       component: newpage ,
 
     },
+    {
+      path:"/pages/newpage/addpage",
+      name:"",
+      component: addpage ,
+    },
+    {
+      path:"/pages/newpage/addpage/addpage2",
+      name:"",
+      component: addpage2 ,
+    },
+    {
+      path:"/pages/newpage/addpage/addpage2/pagecomponent",
+      name:"",
+      component: pagecomponent ,
+    },
+    {
+      path:"/pages/addnewpage",
+      name:"",
+      component: addnewpage ,
+    }
    
   ]
 })
