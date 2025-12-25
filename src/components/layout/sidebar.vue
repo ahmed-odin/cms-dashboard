@@ -27,7 +27,7 @@
     },
     {
       title:"Media Library",
-      path:"/Media Library",
+      path:"/Media",
       icon:"material-symbols:perm-media",
     },
     {

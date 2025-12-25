@@ -16,6 +16,7 @@ import addpage from "@/pages/pages/addpage.vue";
 import addpage2 from "@/pages/pages/addpage2.vue";
 import pagecomponent from "@/pages/pages/pagecomponent.vue";
 import addnewpage from "@/pages/pages/addnewpage.vue";
+import media from "@/pages/Media Library/media.vue";
 const router = createRouter ({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes:[
@@ -111,8 +112,14 @@ const router = createRouter ({
       path:"/pages/addnewpage",
       name:"",
       component: addnewpage ,
-    }
-   
-  ]
+    },
+    {
+      path:"/Media",
+      name:"",
+      component: media ,
+    },
+    
+  ],
+  history:createWebHistory()
 })
 export default router
