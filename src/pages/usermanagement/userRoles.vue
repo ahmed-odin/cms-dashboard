@@ -20,11 +20,11 @@ const websiteList = ref([
 ]);
 </script>
 <template>
- <div class=" flex flex-col  w-[95%] items-center ml-6 justify-center mt-2">
-    <div class="m-2 w-full mt-1 ">
+ <div class=" flex flex-col  w-[95%] items-center ml-6 justify-center mt-5">
+    <div class="w-full mb-5 ">
        <navbar 
     width="100%"
-    height="75px" 
+    height="55px" 
     icon="icon-park-outline:every-user"
     label="User Management / Roles"
     btn-label2="Add New"
@@ -38,7 +38,7 @@ const websiteList = ref([
           <div class="   flex items-center justify-center ">
             
           </div>
-          <span class="font-bold text-black text-[15px]">{{ item.name }}</span>
+          <span class="text-[12px] font-medium">{{ item.name }}</span>
         </div>
       </template>
     </TableComponent>

@@ -1,12 +1,12 @@
 <script setup>
-import { RouterView } from "vue-router";
+import { RouterView, useRoute } from "vue-router";
 import login from "./pages/login.vue";
 import Sidebar from "./components/layout/sidebar.vue";
 </script>
 <template>
   <div class="flex justify-start">
-    <Sidebar />
-    <div class="flex-1 w-full body">
+    <Sidebar v-if="useRoute().fullPath != '/'"  />
+    <div class="flex-1 body ">
       <RouterView />
     </div>
   </div>

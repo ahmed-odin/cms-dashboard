@@ -4,17 +4,17 @@
   import Input from '@/components/common/input.vue';
 </script>
 <template>
-    <div class="flex flex-col  ml-6 mt-4"> 
-      <div class="m-2 w-full mt-1">
+    <div class="flex flex-col  ml-6 mt-5"> 
+      <div class="m-2  mb-5">
       <navbar 
-        width="95%"
-        height="75px" 
+        width="96%"
+        height="55px" 
         icon="heroicons:rectangle-stack"
         label="Pages / New Components"
         btnLabel="Draft"
         btn-label2="Publish"
         showBtn2
-        to2="/pages/newpage/addpage/addpage2/pagecomponent"
+       
       />
     </div>
     <div class="flex ">

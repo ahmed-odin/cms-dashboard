@@ -14,11 +14,11 @@ const props = defineProps({
   
   showBtn2: { type: Boolean, default: false },
   btnLabel2: { type: String, default: 'Settings' },
-  to2: { type: String, default: '/settings' }, 
+  to2: { type: String,  }, 
 
   btnWidth: { type: String, default: '120px' },
-  btnHeight: { type: String, default: '40px' },
-  btnbackgroundcolor:{ttype: String, default: "bg-white"}
+  btnHeight: { type: String, default: '35px' },
+  btnbackgroundcolor: {type: String, default: "bg-blue-500"}
 });
 </script>
 
@@ -27,16 +27,16 @@ const props = defineProps({
     class="flex justify-between items-center bg-white px-6 rounded-2xl shadow-sm"
     :style="{ width: props.width, height: props.height }"
   >
-    <div class="flex items-center gap-3">
-      <Icon :icon="props.icon" class="text-[24px] text-[#325CA8]" />
-      <p class="font-semibold text-[12px] text-[#325CA8]">{{ props.label }}</p>
+    <div class="flex items-center gap-2">
+      <Icon :icon="props.icon" class="text-[18px] text-[#325CA8]" />
+      <p class="font-medium text-[14px] text-[#325CA8]">{{ props.label }}</p>
     </div>
 
     <div class="flex items-center gap-3">
       <router-link 
         v-if="props.showBtn"
         :to="props.to1"
-        class=" border border-[#325CA8] text-[#325CA8]  rounded-xl font-light text-sm flex items-center justify-center transition-opacity hover:opacity-90 no-underline"
+        class=" border border-[#325CA8]  text-[#325CA8]  rounded-xl font-light  flex items-center justify-center transition-opacity hover:opacity-90 no-underline text-[13px]"
         :style="{ width: props.btnWidth, height: props.btnHeight }"
       >
         {{ props.btnLabel }}
@@ -45,7 +45,7 @@ const props = defineProps({
       <router-link 
         v-if="props.showBtn2"
         :to="props.to2"
-        class="border border-[#325CA8] bg-[#325CA8] text-white rounded-xl font-light text-sm flex items-center justify-center transition-opacity hover:opacity-90 no-underline"
+        class="border border-blue-500 bg-blue-500 text-white rounded-xl font-light  flex items-center justify-center transition-opacity hover:opacity-90 no-underline text-[13px]"
         :style="{ width: props.btnWidth, height: props.btnHeight }"
       >
         {{ props.btnLabel2 }}

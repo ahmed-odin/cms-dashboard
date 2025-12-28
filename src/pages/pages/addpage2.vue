@@ -3,22 +3,13 @@ import Navbar from '@/components/common/navbar.vue';
 import { Icon } from '@iconify/vue';
 import Input from '@/components/common/input.vue';
 import Button from '@/components/common/button.vue';
-const componentsList = [
-  { name: 'Card', icon: 'ph:identification-card' },
-  { name: 'Silder', icon: 'ph:monitor' },
-  { name: 'Header', icon: 'ph:layout' },
-  { name: 'image', icon: 'ph:image' },
-  { name: 'Footer', icon: 'ph:browser' },
-  { name: 'Section', icon: 'ph:columns' },
-  { name: 'Navbar', icon: 'ph:caret-circle-up' },
-];
 </script>
 <template>
   <div class="flex flex-col w-[100%] ml-6 justify-center mt-2">
     <div class="m-2 w-full mt-1">
       <navbar 
         width="95%"
-        height="75px" 
+        height="55px" 
         icon="heroicons:rectangle-stack"
         label="Pages / New Page"
         :show-btn="true"

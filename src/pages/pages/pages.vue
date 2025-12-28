@@ -19,25 +19,25 @@ const websiteList = ref([
 
 </script>
 <template>
- <div class="flex ml-6 w-[95%]  flex-col">
+ <div class="flex ml-6 w-[95%] mt-5 flex-col ">
   
-  <div class="flex mt-5 flex-col" >
+  <div class="flex mb-5  flex-col" >
     <Navbar 
     width="100%"
-    height="75px" 
+    height="55px" 
     icon="heroicons:rectangle-stack"
     label="Pages"
     :show-btn2="true"
     btnLabel2="Add New"
     to2="/pages/newpage" />  
   </div>
-   <TableComponent class="mt-2" title="user" icon="heroicons:rectangle-stack" :columns="myColumns" :data="websiteList">
+   <TableComponent  title="user" icon="heroicons:rectangle-stack" :columns="myColumns" :data="websiteList">
       <template #website-category="{ item }">
         <div class="flex items-center gap-4">
           <div class="   flex items-center justify-center ">
             <img src="/src/assets/imges/website logo.png" alt="">
           </div>
-          <span class="font-bold text-black text-[15px]">{{ item.name }}</span>
+          <span class="text-[12px] font-medium">{{ item.name }}</span>
         </div>
       </template>
     </TableComponent>

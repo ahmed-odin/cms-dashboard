@@ -18,7 +18,7 @@ const componentsList = [
     <div class="m-2 w-full mt-1">
       <navbar 
         width="95%"
-        height="75px" 
+        height="55px" 
         icon="heroicons:rectangle-stack"
         label="Pages / New Page"
         :show-btn="true"

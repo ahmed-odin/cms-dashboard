@@ -6,12 +6,12 @@ import Button from '../components/common/button.vue';
 </script>
 <template>
   <!--main nav-->
-    <div class="flex ml-6  flex-col gap-4">
-      <div class=" w-[95%] mt-3">
+    <div class="flex ml-6  flex-col ">
+      <div class=" w-[95%] mt-5 mb-5">
          <navbar class=""
          width=""
          height="55px"
-         label="dashbord"
+         label="Dashbord"
          icon="material-symbols:dashboard-outline"
           />
       </div>
@@ -24,7 +24,7 @@ import Button from '../components/common/button.vue';
             </div>
            <p class="text-[#325CA8] mt-1 text-[12px]" >Website Number</p>
           </div>
-          <div class="flex mt-5 text-3xl gap-4 ml-5">
+          <div class="flex mt-5 text-3xl  gap-4 ml-5">
               <h1>1.5K</h1>
               <img class="rounded-full mt-2.5 w-5 h-5" src="../assets/imges/trending_up.png" alt="">
           </div>
@@ -55,8 +55,8 @@ import Button from '../components/common/button.vue';
         </div>
       </div>
       <!---persentges-->
-      <div class="flex gap-7">
-        <div class="w-[44%] flex-col h-72 rounded-lg bg-white">
+      <div class="flex gap-7 mt-5">
+        <div class="w-[44%] flex-col h-72 rounded-lg  bg-white">
           <div class="ml-5 mt-3 flex flex-col gap-4">
              <p class="text-black text-[14px] ">Monthly Website Number</p>
              <div class="flex flex-row gap-3">

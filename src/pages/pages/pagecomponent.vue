@@ -1,4 +1,5 @@
 <script setup>
+import Input from '@/components/common/input.vue';
 import navbar from '@/components/common/navbar.vue';
 import { Icon } from '@iconify/vue';
 
@@ -13,11 +14,11 @@ const componentsList = [
 ];
 </script>
 <template>
-    <div class="flex flex-col gap-4 ml-6 ">
-      <div class=" w-full mt-5">
+    <div class="flex flex-col  ml-6 mt-5 ">
+      <div class=" w-full mb-5 ">
       <navbar 
-        width="95%"
-        height="75px" 
+        width="97%"
+        height="55px" 
         icon="heroicons:rectangle-stack"
         label="Pages / Components"
         btn-label2="Add New"
@@ -25,11 +26,21 @@ const componentsList = [
         to2="/pages/addnewpage"
       />
     </div>
-    <div class="w-[95%] rounded-xl flex flex-col bg-white h-96 ">
-       <div class="header flex ml-6 mt-5  ">
-        <Icon icon="heroicons:rectangle-stack" class="mt-0.5 text-[22px] text-blue-700" />
-        <p class="text-blue-700 text-[14px] font-extralight ml-2 mt-0.5">All Components</p>
-       </div> 
+    <div class="w-[97%] rounded-xl flex  flex-col bg-white h-96 ">
+       <div class="px-10 py-7 flex justify-between items-center bg-white border-gray-50">
+      
+      <div class="flex items-center gap-2">
+        <Icon icon="heroicons:rectangle-stack" class="mt-0.5 text-[22px] text-[#325CA8]" /> 
+        <p class="text-[#325CA8] text-[16px] font-bold text-base">All Components</p>
+      </div>
+
+      <input type="text" placeholder="value" class="flex items-center gap-2 border border-gray-100 rounded-full px-5 py-2 text-sm text-gray-400 bg-white min-w-[220px] justify-between">
+
+      <div class="flex items-center gap-3 border border-gray-100 rounded-xl px-4 py-2 bg-[#F9FAFB] text-gray-500 text-sm cursor-pointer hover:bg-gray-100 transition-all shadow-sm">
+        <span>Title,...</span>
+        <Icon icon="iconamoon:arrow-down-2-light" class="mt-0.5 text-[18px]" /> 
+      </div>
+    </div> 
         <div class="flex flex-row gap-10 mt-4 ml-4 " >
           <div 
             v-for="(item, index) in componentsList" 

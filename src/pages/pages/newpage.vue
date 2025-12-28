@@ -14,11 +14,11 @@ const componentsList = [
 ];
 </script>
 <template>
-  <div class="flex flex-col w-[100%] ml-6 justify-center mt-2">
-    <div class="m-2 w-full mt-1">
+  <div class="flex flex-col w-[100%] ml-6 justify-center mt-5">
+    <div class="mb-5 w-full ">
       <navbar 
         width="95%"
-        height="75px" 
+        height="55px" 
         icon="heroicons:rectangle-stack"
         label="Pages / New Page"
         :show-btn="true"
@@ -29,8 +29,8 @@ const componentsList = [
       />
     </div>
 
-    <div class="flex mt-2 gap-2.5">
-      <div class="w-[60%] ml-2 flex-col rounded-lg bg-white h-fit pb-6">
+    <div class="flex  gap-2.5">
+      <div class="w-[60%] ml-0.5 flex-col rounded-lg bg-white h-fit pb-6">
         <div class="flex mt-4 ml-7 font-extralight text-[12px] justify-between">
           <p class="text-[#325CA8] text-[15px] flex gap-1 font-medium"> 
             <Icon icon="heroicons:rectangle-stack" class="mt-0.5 text-[18px]" />  

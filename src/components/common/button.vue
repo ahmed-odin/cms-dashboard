@@ -6,7 +6,7 @@
   
   <button 
     :type="type"
-    class="bg-[#325CA8] mt-3 text-white  text-[12px] flex items-center justify-center"
+    class="bg-blue-500 mt-3 text-white  text-[12px] flex items-center justify-center"
     :style="{ 
       width: width || '90%', 
       height: height || '2rem', 

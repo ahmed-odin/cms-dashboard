@@ -22,22 +22,25 @@ const websiteList = ref([
 </script>
 
 <template>
-  <div class="flex ml-6 w-[95%] flex-col gap-6">
-    <div class="flex mt-5 flex-col">
+
+  <!-- <button class="btn btn-sm btn-outline-primary ">JUI Button</button> -->
+  
+  <div class="flex ml-6 w-[95%] flex-col ">
+    <div class="flex mt-5 flex-col mb-5 ">
       <Navbar 
-        width="100%" height="75px" 
-        icon="ic:round-web" label="websites"
-        :show-btn2="true" btnLabel2="Add New" to2="/website/newwebsite"
+        width="100%" height="55px" 
+        icon="ic:round-web" label="Websites"
+        :show-btn2="true" btnLabel2="Add New" to2="/website/newebsit"
       /> 
     </div> 
 
     <TableComponent title="All Websites" :columns="myColumns" :data="websiteList">
       <template #website-category="{ item }">
         <div class="flex items-center gap-4">
-          <div class="   flex items-center justify-center ">
+          <div class=" flex items-center justify-center ">
             <img src="../assets/imges/random logo.png" alt="">
           </div>
-          <span class="font-bold text-black text-[15px]">{{ item.name }}</span>
+          <span class="text-[12px] font-medium">{{ item.name }}</span>
         </div>
       </template>
     </TableComponent>

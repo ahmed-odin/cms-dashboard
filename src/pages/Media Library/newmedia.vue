@@ -1,8 +1,6 @@
 <script setup>
 import navbar from '@/components/common/navbar.vue';
 import { Icon } from '@iconify/vue';
-
-import Input from '@/components/common/input.vue';
 const mediaItems = [
   { id: 1, src:'/src/assets/imges/laptob img.png', },
   { id: 2, src: '/src/assets/imges/billbord.png',  },
@@ -15,23 +13,25 @@ const mediaItems = [
 ];
 </script>
 <template>
-  <div class="flex flex-col w-[100%] ml-6 justify-center mb-5 mt-5">
-   <navbar 
-        width="95%"
+  <div class="flex flex-col  ml-7">
+    <div class=" w-full mb-5 mt-5 ">
+      <navbar 
+        width="98%"
         height="55px" 
         icon="material-symbols:perm-media"
-        label="Media Library"
-        btnLabel="Draft"
-        btn-label2="Add New"
-        showBtn2
-        to2="/media/newmedia"
-      />
-  </div>
-  <div>
-    
-  </div>
-  <div class="p-6 w-[95%] bg-white rounded-xl ml-6  ">
-  <div class="px-10 py-7 flex justify-between items-center bg-white border-b  border-gray-50">
+        label="Media library " />
+    </div>
+    <div class="w-[98%] h-56 rounded-xl bg-white">
+      <div class="flex justify-between mt-5 ml-7">
+        <div class="flex items-center gap-2">
+            <Icon icon="material-symbols:perm-media" class="text-[#325CA8] text-[16px]" />
+            <p class="text-[#325CA8] text-[13px] font-semibold cursor-pointer">Select Media</p>
+          </div>
+          <Icon icon="material-symbols:close" class=" cursor-pointer text-[18px] mr-5 hover:text-red-600 " />
+      </div>
+    </div>
+    <div class="p-6 w-[98%] bg-white rounded-xl mt-5">
+  <div class="px-10 py-7 flex justify-between items-center bg-white border-b border-gray-50">
       
       <div class="flex items-center gap-2">
         <Icon icon="heroicons:rectangle-stack" class="mt-0.5 text-[22px] text-[#325CA8]" /> 
@@ -45,18 +45,22 @@ const mediaItems = [
         <Icon icon="iconamoon:arrow-down-2-light" class="mt-0.5 text-[18px]" /> 
       </div>
     </div> 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div v-for="item in mediaItems"
-      :key="item.id"
-      class="bg-white rounded-md overflow-hidden shadow-sm hover:shadow-sm transition-shadow
-       cursor-pointer">
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div 
+      v-for="item in mediaItems" 
+      :key="item.id" 
+      class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+    >
       <div class="aspect-square w-full">
-        <img :src="item.src" 
-        class="w-full h-full">
-      </div>
+        <img 
+          :src="item.src" 
+          :alt="item.alt" 
+          class="w-full h-full object-cover"
+        />
       </div>
     </div>
-  
+  </div>
 
   <div class="flex items-center gap-4 mt-8 text-sm text-gray-500">
     <button class="w-8 h-8 flex items-center justify-center bg-blue-600 text-white rounded-md">1</button>
@@ -67,4 +71,5 @@ const mediaItems = [
     <button class="hover:text-blue-600">68</button>
   </div>
 </div>
+  </div>
 </template>

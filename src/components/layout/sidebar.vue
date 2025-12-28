@@ -32,7 +32,7 @@
     },
     {
       title:"Categories & Tags",
-      path:"/Categories & Tags",
+      path:"/Categories&Tags",
       icon:"mdi:tag",
     },
     {
@@ -48,7 +48,7 @@
   <div class="body ">
     <div class="flex ">
       <!-- col navbar-->
-      <div class="flex flex-col w-56 h-screen bg-white items-center gap-3">
+      <div class="flex flex-col w-56 pb-[100%] h-screen bg-white items-center gap-3">
          <!-- header text-->
         <div class="flex  mr-6">
           <div class="flex">
@@ -64,11 +64,11 @@
         <!--nav buttons -->
         <div class="flex flex-col  mt-1 ml-0.5">
           <div v-for="item in sidebar" :key="item.title " >
-            <div class="flex flex-col w-full ">
+            <div class="flex flex-col w-full mr-8 ">
              <RouterLink
              
-             :class="route.fullPath == item.path ? 'bg-blue-500 text-white' : ''"
-             :to="item.path" class="flex m-1 pl-5 mr-8 text-[14px] p-1.5 active:bg-blue-600  rounded-lg "> <Icon class="mt-0.5 mr-3" size="50" :icon="item.icon" />  {{ item.title}}   </RouterLink>
+             :class="route.fullPath == item.path ? 'bg-blue-500 text-white ' : ''"
+             :to="item.path" class="flex m-1 pl-5  text-[13px] p-1.5 py-[10px]  transition-all  rounded-xl "> <Icon class="mt-0.5 mr-3 text-[18px]" size="50" :icon="item.icon" />  {{ item.title}}   </RouterLink>
              
              
             </div>
