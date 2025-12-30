@@ -76,7 +76,7 @@ import Button from '../components/common/button.vue';
              <p class="text-black text-[14px] ">Quick draft</p> 
              <div class="flex flex-col gap-0.5">
               <Input class="inputclass pl-2  rounded-xl text-[12px] " type="text" placeholder="Title" />
-              <Input class="inputclass2 pl-2  text-[12px] rounded-xl " type="text" placeholder="Whats on your mind" />
+              <Input class="inputclass2 pl-2 mt-1 text-[12px] rounded-xl " type="text" placeholder="Whats on your mind" />
               <Button 
                   label="Save Draft" 
                   width="100px" 
@@ -101,14 +101,14 @@ import Button from '../components/common/button.vue';
 </template>
 <style scoped>
   .inputclass{
-    background-color: #EDEFEF ;
+    background-color: #F7F7F7 ;
     width: 95%;
     height: 34px;
     border-radius: 14px;
     
   }
   .inputclass2{
-    background-color: #EDEFEF ;
+    background-color: #F7F7F7 ;
     width: 95%;
     height: 85px;
     padding-bottom:55px;

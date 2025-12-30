@@ -19,10 +19,10 @@ const showpages=false
     to2="/website/newuser/newrole"
     to1="/website/newuser/newrole"/>
     </div>
-      <div class="flex w-full rounded-xl bg-white h-fit pb-7  flex-col" >
+      <div class="flex w-full rounded-xl  bg-white h-fit pb-7  flex-col" >
         <div class="flex gap-1 ml-7 mt-4" >  <Icon icon="icon-park-outline:every-user" class=""  style="color: #325CA8;" /> <p class="text-[#325CA8] text-[12px] font-semibold">New Role</p>
          </div>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center mt-4 gap-2">
           <Input class="w-[95%] h-[42px] ml-8 text-black" 
           placeholder="Roll Name*"/>
         </div>

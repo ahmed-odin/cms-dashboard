@@ -10,10 +10,10 @@ const props = defineProps({
   
   showBtn: { type: Boolean, default: false },
   btnLabel: { type: String, default: 'Add New' },
-  to1: { type: String, default: '/' },
+  to1: { type: String,  },
   
   showBtn2: { type: Boolean, default: false },
-  btnLabel2: { type: String, default: 'Settings' },
+  btnLabel2: { type: String,  },
   to2: { type: String,  }, 
 
   btnWidth: { type: String, default: '120px' },

@@ -15,20 +15,20 @@ import { Icon } from "@iconify/vue";
     btnLabel="Inactive"
     btn-label2="Active"
     showBtn2
-    to2="/website/newuser"/>
+   />
     </div>
-      <div class="flex w-full rounded-xl bg-white h-fit pb-6  flex-col" >
+      <div class="flex w-full rounded-xl  bg-white h-fit pb-6  flex-col" >
         <div class="flex gap-1 ml-7 mt-4" >  <Icon icon="ic:round-web" class=""  style="color: #325CA8;" /> <p class="text-[#325CA8] text-[12px]">New Website</p> </div>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center mt-4 gap-2">
           <Input class="w-[50%] h-12 ml-8 text-black" 
-          placeholder="Website Name*"/> <Input class="w-[50%]  h-12 mr-3 " 
+          placeholder="Website Name*"/> <Input class="w-[50%]  h-12 mr-3  "  
           placeholder="Site title*"/>
         </div>
         <Input class="w-[95.5%] ml-8 h-12" 
         placeholder="Domain*"/>
         <div class="flex items-center gap-2">
           <Input class="w-[50%] h-12 ml-8 text-black" 
-          placeholder="Owner"/> <Input class="w-[50%]  h-12 mr-3 " 
+          placeholder="Owner" iconColor="#3b82f6" to="/website/newuser" icon="mdi:user-plus-outline" top="18px" /> <Input class="w-[50%]  h-12 mr-3 " 
           placeholder="Contact Email"/>
         </div>
         <Input class="w-[95.5%] ml-8 h-12" 

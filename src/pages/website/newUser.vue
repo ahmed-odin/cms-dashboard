@@ -15,14 +15,14 @@ import Input from '@/components/common/input.vue';
     btnLabel="Inactive"
     btn-label2="Active"
     showBtn2
-    to2="/website/newuser/newrole"/>
+   />
     </div>
       <div class="flex w-full rounded-xl bg-white h-fit pb-7   flex-col" >
         <div class="flex gap-1 ml-7 mt-4" >  <Icon icon="icon-park-outline:every-user" class=""  style="color: #325CA8;" /> <p class="text-[#325CA8] text-[12px] font-semibold">New User</p> </div>
-        <div class="flex items-center gap-2">
-          <Input class="w-[50%] h-16 ml-8 text-black" 
-          placeholder="Full name*" /> <Input class="w-[50%]  h-16 mr-3 " 
-          placeholder="Role*"/>
+        <div class="flex items-center gap-2 mt-4">
+          <Input class="w-[50%]  h-16 ml-8 text-black" 
+          placeholder="Full name*" /> <Input class="w-[50%]   h-16 mr-3 " 
+          placeholder="Role*" iconColor="#3b82f6" to="/website/newuser/newrole" icon="mdi:shield-account" top="18px" />
         </div>
         
         <div class="flex items-center gap-2">

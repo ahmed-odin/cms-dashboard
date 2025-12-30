@@ -19,24 +19,24 @@ const websiteList = ref([
 ]);
 </script>
 <template>
- <div class="ml-5 mt-5 mb-5">
+ <div class="flex ml-6 w-[95%] mt-5 flex-col ">
   
-  <div class="flex mt-5 flex-col mb-5" >
+  <div class="flex mb-5  flex-col" >
     <Navbar 
-    width="99%"
-    height="55px"" 
+    width="100%"
+    height="55px" 
     icon="fa6-brands:wpforms"
-    label="forms/contact form"
+    label="Forms /Contact Form "
     :show-btn2="true"
     btnLabel2="Add New"
-    to2="/form/newform" />  
+     to2="/form/newform"
+     />  
   </div>
-  <div></div>
-  <TableComponent title="user" class="w-[99%]" icon="" :columns="myColumns" :data="websiteList">
+   <TableComponent  title="user" icon="heroicons:rectangle-stack" :columns="myColumns" :data="websiteList">
       <template #website-category="{ item }">
         <div class="flex items-center gap-4">
           <div class="   flex items-center justify-center ">
-            
+           
           </div>
           <span class="text-[12px] font-medium">{{ item.name }}</span>
         </div>

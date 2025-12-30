@@ -114,7 +114,7 @@ const router = createRouter ({
       component: addpage2 ,
     },
     {
-      path:"/pages/newpage/addpage/addpage2/pagecomponent",
+      path:"/pages/pagecomponent",
       name:"",
       component: pagecomponent ,
     },

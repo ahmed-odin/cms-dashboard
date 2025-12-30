@@ -4,20 +4,21 @@ import { Icon } from '@iconify/vue';
 import Input from '@/components/common/input.vue';
 </script>
 <template>
-<div class="  ml-5 mt-5 mb-5">
-      <navbar 
-        width="99%"
-        height="55px" 
-        icon="mdi:tag"
-        label="Categories & Tags / New Tags"
-        :show-btn="true"
-        btnLabel="Close"
-        btn-label2="Save & Publish"
-        showBtn2
-        to2="/Categories/tags"/>
+  <div class=" flex flex-col  w-[95%] items-center ml-6 justify-center mt-5">
+    <div class=" w-full mb-5  ">
+       <navbar  
+    width="100%"
+    height="55px" 
+    icon="mdi:tag"
+    label="Categories & Tags / New Category"
+    :show-btn="true"
+    btnLabel="Inactive"
+    btn-label2="Active"
+    showBtn2
+    />
     </div>
-    <div class="w-[97%] ml-5 flex-col rounded-lg bg-white h-fit pb-6">
-        <div class="flex mt-5 ml-7 font-extralight text-[12px] justify-between">
+      <div class="w-[100%]  flex-col rounded-lg bg-white h-fit pb-6">
+        <div class="flex  ml-7 font-extralight text-[12px] justify-between">
           <p class="text-[#325CA8] mt-5 text-[15px] flex gap-1 font-medium"> 
             <Icon icon="mdi:tag" class="mt-0.5 text-[18px]" />  
             New Page
@@ -34,7 +35,17 @@ import Input from '@/components/common/input.vue';
         </div>
 
         <Input class="w-[92%] h-12 ml-7 text-black mt-6" placeholder="Category Name"/>
-        <Input class="w-[92%] h-14 ml-7 text-black mt-2" placeholder="Parent Category"/>
-        <Input class="w-[92%] h-32 ml-7 text-black mt-2 text-start" placeholder="Description" />
+        <Input class="w-[92%] h-14 ml-7 text-black " placeholder="Parent Category"/>
+        <Input class=" inputclass input w-[92%]  ml-7 text-black  text-start"   placeholder="Description" />
       </div>
+  </div>
+ 
 </template>
+<style scoped>
+  .inputclass{
+    background-color: #F7F7F7 ;
+    height: 150px;
+    border-radius: 14px;
+    
+  }
+</style>

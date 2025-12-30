@@ -11,12 +11,12 @@ import Button from '@/components/common/button.vue';
         width="95%"
         height="55px" 
         icon="heroicons:rectangle-stack"
-        label="Pages / New Page"
+        label="Pages / New Pages"
         :show-btn="true"
         btnLabel="Draft"
         btn-label2="Publish"
         showBtn2
-        to2="/pages/newpage/addpage/addpage2/pagecomponent"
+        
       />
     </div>
 

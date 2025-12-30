@@ -26,7 +26,7 @@
           </p>
           <Icon icon="material-symbols:open-in-full-rounded" class="mt-1 mr-6 text-[#757575] text-[16px] cursor-pointer" />
         </div>
-        <div class="ml-6 flex flex-col gap-2">
+        <div class="ml-6 flex flex-col pb-5 gap-2">
           <Input class="w-[60%] h-[50px] rounded-lg  text-black" 
           placeholder="Component Name"/> 
           <div class="flex gap-1" >
@@ -75,9 +75,9 @@
            
           <Icon icon="material-symbols:open-in-full-rounded" class="mt-1 mr-6 text-[#757575] text-[16px] cursor-pointer" />
         </div>
-        <div class="w-[95%] ml-5 mt-4 rounded-xl h-[50%] bg-[#F5F5F5]  ">
-
-        </div>
+         
+              <Input class="w-[95%] ml-5 h-[70%] mt-4 rounded-xl  bg-[#F5F5F5]"/>
+          
     </div>
     </div>
 </template>

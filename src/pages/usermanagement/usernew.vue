@@ -16,14 +16,14 @@
     btnLabel="Inactive"
     btn-label2="Active"
     showBtn2
-    to2="/Users Management/New User/NewRole"/>
+    />
     </div>
-      <div class="flex w-full rounded-xl bg-white h-fit pb-7  flex-col" >
+      <div class="flex w-full gap-2 rounded-xl bg-white h-fit pb-7  flex-col" >
         <div class="flex gap-1 ml-7 mt-4" >  <Icon icon="icon-park-outline:every-user" class=""  style="color: #325CA8;" /> <p class="text-[#325CA8] text-[12px] font-semibold">New User</p> </div>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-2 mt-4">
           <Input class="w-[50%] h-[42px] ml-8 text-black" 
           placeholder="Full name*"/> <Input class="w-[50%]  h-[42px] mr-3 " 
-          placeholder="Role*"/>
+          placeholder="Role*" iconColor="#3b82f6" to="/Users Management/New User/NewRole"" icon="mdi:shield-account" top="18px"/>
         </div>
         
         <div class="flex items-center gap-2">

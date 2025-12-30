@@ -31,7 +31,7 @@ const websiteList = ref([
         width="100%" height="55px" 
         icon="ic:round-web" label="Websites"
         :show-btn2="true" btnLabel2="Add New" to2="/website/newebsit"
-      /> 
+           /> 
     </div> 
 
     <TableComponent title="All Websites" :columns="myColumns" :data="websiteList">

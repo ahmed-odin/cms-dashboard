@@ -20,12 +20,12 @@ const componentsList = [
         width="95%"
         height="55px" 
         icon="heroicons:rectangle-stack"
-        label="Pages / New Page"
+        label="Pages / New Pagesss"
         :show-btn="true"
         btnLabel="Draft"
         btn-label2="Publish"
         showBtn2
-        to2="/pages/newpage/addpage/addpage2"
+        
       />
     </div>
 
